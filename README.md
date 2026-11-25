@@ -82,37 +82,7 @@ Average Turnaround Time = 14.75
 **Program 10 — Disk scheduling**: requests `98 183 37 122 14 124 65 67`, head = 53, disk size = 200
 → FCFS = 640, SSTF = 236, SCAN = 331, C-SCAN = 382.
 
-## Notes on differences from the lab manual's sample output
 
-While verifying the programs by hand, a few sample outputs printed in the manual
-turned out not to match the correct result for the given input. These
-implementations produce the verified values:
-
-| Program | Manual sample | This repo (verified) | Reason |
-|---------|---------------|----------------------|--------|
-| 3 — Round Robin | CT = 17, 8, 22, 19 | CT = 16, 7, 20, 22 | Gantt chart: P1(0-4) P2(4-7) P3(7-11) P4(11-15) P1(15-16) P3(16-20) P4(20-22) |
-| 9 — FIFO / LRU | 9 / 8 faults | 10 / 9 faults | Hand-traced on the reference string above (Optimal = 7 matches) |
-| 10 — SCAN | 236 | 331 | Head moves up to cylinder 199, then back down to 14: (199−53) + (199−14) |
-| 10 — C-SCAN | 269 | 382 | 146 up to 199, 199 jump to 0, then 37 up to 37 |
-
-Other differences from the C originals: containers (`vector`, `queue`) replace fixed
-arrays, `std::thread` replaces `pthread_create` where possible (programs 4–6),
-Program 8 also prints the leftover free memory, and Program 7 prints the safe
-sequence after a granted request.
-
-## Push to GitHub
-
-```bash
-cd OS-Lab-CPP
-git init
-git add .
-git commit -m "Add Operating Systems lab programs in C++"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-```
-
-Create the empty repository on GitHub first (without a README, since this one already exists).
 
 ## Author
 
