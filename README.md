@@ -1,4 +1,4 @@
-# operating-system-priyanhshu
+# operating-system-priyanshu
 # Operating Systems Lab — C++ Implementations
 
 Practical file for **CEC301 / CSC301 — Operating Systems** (B.Tech / B.Sc. CSE, Third Year).
