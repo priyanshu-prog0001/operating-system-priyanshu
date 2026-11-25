@@ -311,7 +311,7 @@ inconsistent with the inputs shown. This repo prints the verified values.
 
 ## Author
 
-**Name:**Priyasnhu Negi
+**Name:** Priyasnhu Negi
 **Roll No.:** 2472171
 **Course:** CEC301  — Operating Systems
 **Institution:** Doon university
