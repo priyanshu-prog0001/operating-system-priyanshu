@@ -7,19 +7,7 @@ All 11 lab programs from the DU OS Lab Manual, re-implemented in **modern C++17*
 
 ## Programs
 
-| #  | Program | File |
-|----|---------|------|
-| 1  | Process creation with `fork()`, `exec()`, `wait()` | [`src/01_fork_exec_wait.cpp`](src/01_fork_exec_wait.cpp) |
-| 2  | Thread creation and management with POSIX threads | [`src/02_pthreads_sum.cpp`](src/02_pthreads_sum.cpp) |
-| 3  | CPU scheduling — FCFS, SJF, Priority, Round Robin | [`src/03_cpu_scheduling.cpp`](src/03_cpu_scheduling.cpp) |
-| 4  | Producer–Consumer using semaphores | [`src/04_producer_consumer.cpp`](src/04_producer_consumer.cpp) |
-| 5  | Readers–Writers using semaphores | [`src/05_readers_writers.cpp`](src/05_readers_writers.cpp) |
-| 6  | Dining Philosophers using semaphores | [`src/06_dining_philosophers.cpp`](src/06_dining_philosophers.cpp) |
-| 7  | Deadlock avoidance — Banker's Algorithm | [`src/07_bankers_algorithm.cpp`](src/07_bankers_algorithm.cpp) |
-| 8  | Memory allocation — First / Best / Worst Fit | [`src/08_memory_allocation.cpp`](src/08_memory_allocation.cpp) |
-| 9  | Page replacement — FIFO, LRU, Optimal | [`src/09_page_replacement.cpp`](src/09_page_replacement.cpp) |
-| 10 | Disk scheduling — FCFS, SSTF, SCAN, C-SCAN | [`src/10_disk_scheduling.cpp`](src/10_disk_scheduling.cpp) |
-| 11 | File allocation — Contiguous, Linked, Indexed | [`src/11_file_allocation.cpp`](src/11_file_allocation.cpp) |
+
 
 `src/sync_common.hpp` holds a small counting `Semaphore` class (mutex + condition
 variable) shared by programs 4, 5 and 6.
